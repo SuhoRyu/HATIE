@@ -1,7 +1,7 @@
 # HATIE: Towards Scalable Human-aligned Benchmark for Text-guided Image Editing
 
 [Suho Ryu](https://scholar.google.com/citations?user=fQCeEH0AAAAJ&hl)\,
-[Kihyun Kim]\,
+Kihyun Kim\,
 Eugene Baek\,
 Dongsoo Shin,
 [Joonseok Lee](https://viplab.snu.ac.kr/)<br/>
