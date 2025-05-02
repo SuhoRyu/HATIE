@@ -8,7 +8,7 @@ Dongsoo Shin\,
 CVPR '25 Highlight |
 [GitHub](https://github.com/SuhoRyu/HATIE) | [arXiv](https://arxiv.org/abs/2505.00502)
 
-(Code will be released soon)
+(Codes and datasets will be released soon)
 
 ![t2i](images/main.png)
  
