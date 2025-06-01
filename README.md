@@ -161,8 +161,6 @@ Except for "aggregate.sh", both "segment.sh" and "score.sh" are safe to interrup
 The editing and segmentation processes do not need to be fully completed before running the subsequent scripts. Each script will proceed using the available results and will exit with a message indicating any unfinished items. This means you can run parts of the HATIE pipeline multiple times during the (potentially time-consuming) editing process to save time on evaluation.
 
 ## Acknowledments
-This implementation of HATIE makes use of multiple pre-implemented codes. [Detectron2](https://github.com/facebookresearch/detectron2), [LPIPS](https://github.com/richzhang/PerceptualSimilarity), [CLIP](https://github.com/openai/CLIP) and [DINOv2](https://github.com/facebookresearch/dinov2) are imported inside the code, and [pytorch-fid](https://github.com/mseitzer/pytorch-fid) and [t2v_metrics](https://github.com/linzhiqiu/t2v_metrics) are modified and embedded into the code. We acknowledge the works of these repositories. 
-
 This implementation of HATIE integrates several pre-existing tools and libraries. Specifically, it imports:
 
 * [Detectron2](https://github.com/facebookresearch/detectron2)
