@@ -1,4 +1,4 @@
-# [CVPR '25 Highlight] HATIE: Towards Scalable Human-Aligned Benchmark for Text-guided Image Editing
+# HATIE: [CVPR '25 Highlight] Towards Scalable Human-Aligned Benchmark for Text-guided Image Editing
 
 [Suho Ryu](https://scholar.google.com/citations?user=fQCeEH0AAAAJ&hl)\,
 Kihyun Kim\,
