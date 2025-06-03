@@ -12,17 +12,6 @@ Dongsoo Shin\,
 HATIE is a comprehensive evaluation framework developed to objectively assess text-guided image editing models. HATIE introduces a large-scale, diverse benchmark set, covering various editing tasks. It employs an automated, multifaceted evaluation pipeline that aligns closely with human perception. HATIE enables scalable, reproducible, and precise benchmarking of image editing models.
  
 ## Setup
-### Environment setup
-The following instructions should work on most machines. However, depending on your specific environment and system configuration, you may need to install PyTorch and CUDA separately to ensure compatibility.
-
-```bash
-conda create -n hatie python=3.10
-conda activate hatie
-
-conda install pytorch=2.7.0 torchvision=0.22.0 torchaudio=2.7.0 cudatoolkit=11.8 -c pytorch -c conda-forge
-pip install -r requirements.txt
-```
-
 ### Load Codes and Data 
 ```bash
 # clone repository
@@ -33,9 +22,20 @@ cd HATIE
 # download image set
 git lfs install
 git clone https://huggingface.co/SHRyu97/HATIE
-unzip HATIE/original_images.zip
+unzip HATIE/HATIE_original_images.zip
 ```
 Alternatively, you can download "HATIE_original_images.zip" and "editable_objs_mask.pkl" from [HuggingFace](https://huggingface.co/SHRyu97/HATIE). After downloading, unzip the archive (if needed) and place the contents in any desired location on your system.
+
+### Environment setup
+The following instructions should work on most machines. However, depending on your specific environment and system configuration, you may need to install PyTorch and CUDA separately to ensure compatibility.
+
+```bash
+conda create -n hatie python=3.10
+conda activate hatie
+
+conda install pytorch=2.7.0 torchvision=0.22.0 torchaudio=2.7.0 cudatoolkit=11.8 -c pytorch -c conda-forge
+pip install -r requirements.txt
+```
 
 ## Run
 ### 1. Run Your Model
