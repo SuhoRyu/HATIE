@@ -8,8 +8,6 @@ Dongsoo Shin\,
 CVPR '25 Highlight |
 [GitHub](https://github.com/SuhoRyu/HATIE) | [arXiv](https://arxiv.org/abs/2505.00502)
 
-(Codes will be released soon)
-
 ![t2i](images/main.png)
 
 HATIE is a comprehensive evaluation framework developed to objectively assess text-guided image editing models. HATIE introduces a large-scale, diverse benchmark set, covering various editing tasks. It employs an automated, multifaceted evaluation pipeline that aligns closely with human perception. HATIE enables scalable, reproducible, and precise benchmarking of image editing models.
