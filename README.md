@@ -24,7 +24,7 @@ git lfs install
 git clone https://huggingface.co/SHRyu97/HATIE
 unzip HATIE/HATIE_original_images.zip
 ```
-Alternatively, you can download "HATIE_original_images.zip" and "editable_objs_mask.pkl" from [HuggingFace](https://huggingface.co/SHRyu97/HATIE). After downloading, unzip the archive (if needed) and place the contents in any desired location on your system.
+Alternatively, you can download `HATIE_original_images.zip` and `editable_objs_mask.pkl` from [HuggingFace](https://huggingface.co/SHRyu97/HATIE). After downloading, unzip the archive (if needed) and place the contents in any desired location on your system.
 
 ### Environment setup
 The following instructions should work on most machines. However, depending on your specific environment and system configuration, you may need to install PyTorch and CUDA separately to ensure compatibility.
@@ -39,7 +39,7 @@ pip install -r requirements.txt
 
 ## Run
 ### 1. Run Your Model
-The files "queries/queries_w_remove.pkl" and "queries/queries_wo_remove.pkl" contain all necessary information of the benchmark queries. Specifically, "queries_w_remove.pkl" includes object removal, whereas "queries_wo_remove.pkl" contains queries excluding object removal cases. You can load the desired query file using the pickle module.
+The files `queries/queries_w_remove.pkl` and `queries/queries_wo_remove.pkl` contain all necessary information of the benchmark queries. Specifically, `queries_w_remove.pkl` includes object removal, whereas `queries_wo_remove.pkl` contains queries excluding object removal cases. You can load the desired query file using the pickle module.
 
 ```python
 import pickle
@@ -94,7 +94,7 @@ Set each option appropriately based on your specific run configurations, then ex
 Then, the code will save the resulting segmentation mask files into the output directory you specified.
 
 ### 3. Scoring
-The next step is the actual scoring phase. Using the segmentation mask files obtained from the previous step, the following script computes scores for each edited output image using all metrics included in HATIE. Open the "score.sh" file, which should appear as shown below.
+The next step is the actual scoring phase. Using the segmentation mask files obtained from the previous step, the following script computes scores for each edited output image using all metrics included in HATIE. Open the `score.sh` file, which should appear as shown below.
 
 ```bash
 #!/bin/bash
@@ -119,7 +119,7 @@ Set each option according to your specific run configuration, then execute the s
 The code will log the output scores into the output directory you specified.
 
 ### 4. Aggregate Scores
-The final phase aggregates all the scores obtained during the scoring phase into final model scores. Open the "aggregate.sh" file, which should look like the example below.
+The final phase aggregates all the scores obtained during the scoring phase into final model scores. Open the `aggregate.sh` file, which should look like the example below.
 
 ```bash
 #!/bin/bash
@@ -141,18 +141,18 @@ The code will aggregate the scores of each output into final model scores and sa
 
 You will receive two JSON files containing the final model scores:
 
-1. "{output path}/scores/scores_{prefix}_total.json"
+1. `{output path}/scores/scores_{prefix}_total.json`
    - This file contains the aggregated total score along with scores for the five evaluation criteria:
    object fidelity, object consistency, background fidelity, background consistency, and image quality.
 
-2. "{output path}/scores/scores_{prefix}_qtype.json"
+2. `{output path}/scores/scores_{prefix}_qtype.json`
    – This file provides scores aggregated separately for each query type:
    object add, replace, remove, attribute change, resize, background change and style change.
 
 Each score is represented as a list of two values: "[score, error]", where the first value is the score, and the second is the corresponding error. If the error option was disabled, the error values will be "null".
 
 ### 5. Resume
-Except for "aggregate.sh", both "segment.sh" and "score.sh" are safe to interrupt and resume. To resume a process, simply re-run the corresponding script. The code will automatically continue from where it left off.
+Except for `aggregate.sh`, both `segment.sh` and `score.sh` are safe to interrupt and resume. To resume a process, simply re-run the corresponding script. The code will automatically continue from where it left off.
 
 The editing and segmentation processes do not need to be fully completed before running the subsequent scripts. Each script will proceed using the available results and will exit with a message indicating any unfinished items. This means you can run parts of the HATIE pipeline multiple times during the (potentially time-consuming) editing process to save time on evaluation.
 
