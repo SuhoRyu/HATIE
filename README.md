@@ -142,7 +142,7 @@ The code will aggregate the scores of each output into final model scores and sa
 You will receive two JSON files containing the final model scores:
 
 1. `{output path}/scores/scores_{prefix}_total.json`
-   - This file contains the aggregated total score along with scores for the five evaluation criteria:
+   – This file contains the aggregated total score along with scores for the five evaluation criteria:
    object fidelity, object consistency, background fidelity, background consistency, and image quality.
 
 2. `{output path}/scores/scores_{prefix}_qtype.json`
