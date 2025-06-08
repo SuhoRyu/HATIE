@@ -177,7 +177,8 @@ are embedded directly into the codebase. We acknowledge and appreciate the contr
 @inproceedings{ryu2025towards,
   title={Towards Scalable Human-aligned Benchmark for Text-guided Image Editing},
   author={Ryu, Suho and Kim, Kihyun and Baek, Eugene and Shin, Dongsoo and Lee, Joonseok},
-  journal={Proceedings of the IEEE/CVF conference on computer vision and pattern recognition},
+  booktitle={Proceedings of the Computer Vision and Pattern Recognition Conference},
+  pages={18292--18301},
   year={2025}
 }
 ```
