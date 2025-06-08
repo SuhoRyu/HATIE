@@ -61,28 +61,6 @@ WEIGHTS = {
     }
 }
 
-
-super_class = {
-    "person": "person", "car": "vehicle", "chair": "household", "umbrella": "other", "boat": "vehicle", 
-    "bottle": "dinning", "bench": "outdoor", "bird": "animal", "clock": "other", "bowl": "dinning", 
-    "bus": "vehicle", "train": "vehicle", "horse": "animal", "airplane": "vehicle", "kite": "other", 
-    "elephant": "animal", "dog": "animal", "cup": "dinning", "sheep": "animal", "traffic light": "outdoor", 
-    "banana": "food", "giraffe": "animal", "cow": "animal", "book": "other", "truck": "vehicle", 
-    "skateboard": "sports", "sports ball": "sports", "zebra": "animal", "surfboard": "sports", "motorcycle": "vehicle", 
-    "bed": "household", "cat": "animal", "sink": "household", "tie": "other", "pizza": "food", 
-    "backpack": "other", "vase": "other", "donut": "food", "laptop": "other", "fork": "dinning", 
-    "toilet": "household", "bear": "animal", "cell phone": "other", "keyboard": "other", "broccoli": "food", 
-    "orange": "food", "knife": "dinning", "apple": "food", "bicycle": "vehicle", "cake": "food", 
-    "skis": "sports", "couch": "household", "frisbee": "sports", "tv": "household", "baseball bat": "sports", 
-    "carrot": "food", "spoon": "dinning", "refrigerator": "household", "fire hydrant": "outdoor", "remote": "other", 
-    "suitcase": "other", "snowboard": "sports", "sandwich": "food", "oven": "household", "hot dog": "food", 
-    "teddy bear": "other", "microwave": "household", "stop sign": "outdoor", "wine glass": "dinning", "scissors": "other", 
-    "toothbrush": "other", "parking meter": "outdoor", "handbag": "other", "toaster": "household", "dining table": "household", 
-    "baseball glove": "sports", "hair drier": "other",
-    "superclass_list": ["person", "animal", "vehicle", "household", "dinning", "food", "outdoor", "sports", "other"]
-}
-
-
 def agg_obj_add(scores, weights):
     bg_cst = 0
     for i, scr in enumerate(scores['bg_cst']):
